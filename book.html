@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book now</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      *{
+        font-family: 'Poppins',sans-serif;
+        padding: 0;
+        margin: 0;
+      }
+      .continer-fluid{
+        background-image: url("/image/book\ 2.jpg");
+        background-size:auto;
+        width: 100%;
+        height: 100%;
+        display:flex;
+      }
+      #box1{
+        border-color: rgba(165, 42, 42, 0.5) !important;
+        color: brown;
+        justify-content: center;
+        flex-direction: row;
+        align-content: center;
+      }
+      @media (max-width: 576px) {
+            .container {
+                margin-left: 7%;
+                margin-right: 7%;
+            }
+        }
+    </style>
+    <script src="script.js"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init({
+    publicKey: "2yT9BIkulzFqtvGWv",
+  });
+})();
+</script>
+</head>
+<body>
+    <div class="continer-fluid">
+      <div class="container p-5 mt-5 mb-5 bg-light-subtle rounded-4 border border-2"  id="box1">
+        <h2 class="text-center pb-3 ">Book Now</h2>
+        <form class="row g-4" id="bookNow">
+        <!--name details-->
+          <div class="col-md-12">
+            <h5>Name Details *</h5>
+          </div>
+          <div class="col-md-6">
+            <label for="inputfname" class="form-label" id="name">First Name</label>
+            <input type="name" class="form-control border border-dark-subtle rounded-0" id="inputfname" placeholder="First Name"  required title="Enter your name">
+          </div>
+          <div class="col-md-6">
+            <label for="inputLname" class="form-label">Last Name</label>
+            <input type="name" class="form-control border border-dark-subtle rounded-0" id="inputLname" placeholder="Last Name">
+          </div>
+        <!--end name details-->
+        
+        <!--Contact details-->
+        <div class="col-md-12">
+          <h5 class="pt-3">Contact Details *</h5>
+        </div>
+        <div class="col-md-6">
+          <label for="mobile" class="form-label">Mobile Number</label>
+          <input type="tel" class="form-control border border-dark-subtle rounded-0" id="mobile" minlength="10" placeholder="Mobile number"  required title="Enter your mobile number">
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="email" class="form-control border border-dark-subtle rounded-0" id="email" placeholder="Email" required title="Enter your email">
+        </div>
+      <!--end contact details-->
+
+      <!--Event details-->
+      <div class="col-md-12">
+        <h5 class="pt-3">Event Details *</h5>
+      </div>
+      <div class="col-md-6">
+        <label for="Ename" class="form-label">Event Name</label>
+        <select id="Ename" class="form-select border border-dark-subtle rounded-0">
+          <option selected value="">Choose...</option>
+          <option value="Wedding">Wedding</option>
+          <option value="Rection">Rection</option>
+          <option value="Birthday">Birthday</option>
+          <option value="Couple portrait">Couple portrait</option>
+          <option value="Baby Photography">Baby Photography</option>
+          <option value="Event Photography">Event Photography</option>
+          <option value="Others">Others</option>
+        </select>
+        </div>
+      <div class="col-md-6">
+        <label for="edate" class="form-label">Event Date</label>
+        <input type="date" class="form-control border border-dark-subtle rounded-0" id="edate" placeholder="Event Date" required title="Enter the event date">
+      </div>
+      <div class="col-md-6">
+        <label for="eplace" class="form-label">Event Place</label>
+        <input type="text" class="form-control border border-dark-subtle rounded-0" id="eplace" placeholder="Event Place" required title="Enter the event place">
+        <br>
+        <label for="eplace" class="form-label">Tell us more about</label>
+        <textarea type="text" rows="3" class="form-control border border-dark-subtle rounded-0" id="eabout" placeholder="Write here"></textarea>
+      </div> 
+    
+    <!--end  Event details-->
+          <div class="col-12">
+            <button type="button" class="btn btn-danger" onclick="validateForm()">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</html> 

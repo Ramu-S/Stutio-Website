@@ -1,0 +1,452 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, 'sans-serif';
+    box-sizing: border-box;
+}
+
+#header {
+    background-color: blueviolet;
+    box-shadow: 1px 1px 10px 1px white;
+    position: sticky;
+    
+    display: flex;
+    padding: 5px;
+    z-index: 4;
+    top: 0%;
+    width: 100%;
+}
+
+#header img {
+    padding-left: 20px;
+}
+
+#header ul {
+    margin: auto;
+    font-size: large;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, 'sans-serif';
+}
+
+button {
+    font-family: Verdana, Geneva, Tahoma, 'sans-serif';
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+#header li {
+
+    display: inline;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+li:hover {
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.item-menu {
+    margin: 0;
+}
+
+#login {
+    background-color: blueviolet;
+    margin-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border-radius: 5px;
+    border: 2px solid white;
+    font-family: Verdana, Geneva, Tahoma, 'sans-serif';
+}
+
+button[id="login"]:hover {
+    border-color: white;
+    box-shadow: 0 0 5px white;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    color: white;
+}
+
+
+@media screen and (max-width:734px) {
+    .navbar-nav-small {
+        /* margin-top: 16px; */
+        margin-left: 00px;
+        background-color: rgb(138, 43, 226);
+        padding-left: 10px;
+    }
+
+    .container-fluid {
+        margin: 0;
+        padding: 0;
+    }
+
+    #header {
+        margin: 0;
+        padding: 0;
+    }
+
+    li:hover {
+        border-bottom: none;
+        padding-bottom: 0%;
+        cursor: pointer;
+    }
+
+    #header li {
+
+        display: block;
+        margin: 10px;
+        padding-right: 20%;
+        text-decoration: none;
+    }
+
+}
+
+@media screen and (max-width:992px) {
+    #navbar-brand img {
+        padding: 0;
+    }
+
+    #header {
+        height: 60px;
+    }
+
+}
+
+/* @media screen and (max-width: 600px){
+    #header-logo{
+        padding: 0;
+        margin: 0;
+    } */
+
+
+
+.row {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#welcome-detail {
+    margin-top: 5%;
+    padding: 50px;
+}
+
+#welcome-detail h1 {
+    width: 100%;
+    font-family: "Merriweather", serif;
+    font-weight: bold;
+}
+#welcome-detail h6{
+    font-family: "Merriweather", serif;
+    color:black;
+    text-align: center;
+    opacity: 50;
+}
+#welcome-detail h6 span {
+    color: greenyellow;
+    font-family: "Merriweather", serif;
+    text-shadow: 1px 1px rgb(85, 85, 85);
+}
+
+#welcome-detail h1 span {
+    color: greenyellow;
+    font-family: "Merriweather", serif;
+    text-shadow: 1px 1px rgb(85, 85, 85);
+}
+
+#welcome-detail p {
+    font-family: "Merriweather", serif;
+    font-size: medium;
+}
+
+#head-btn {
+    font-family: "Merriweather", serif;
+    background-color: greenyellow;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+    margin-left: 0px;
+    margin-top: 40px;
+}
+#social-media{
+    font-size: 35px;
+    color: greenyellow;
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* padding-left: 5px;
+    padding-right: 5px; */
+    border: none;
+    border-radius: 50px;
+    /* background-color: greenyellow; */
+}
+
+/*slide*/
+#slide {
+    padding: 0;
+    position: relative;
+    width: 100vh;
+    height: 90vh;
+}
+
+.slider {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+#square1 {
+
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 2px;
+    background-color: greenyellow;
+    border-radius: 10px;
+}
+
+#square2 {
+    /* position: absolute;
+    margin-top: 57%;
+    margin-left: 50%;
+    background-color: greenyellow;
+    width: 50%;
+    height: 25vh;  */
+    position: absolute;
+    margin-top: 313px;
+    margin-left: 388px;
+    width: 200px;
+    height: 200px;
+    background-color: greenyellow;
+    border-radius: 10px;
+}
+/* welcome end */
+
+/* Service start */
+.card-section{
+    background-color: rgb(233, 233, 233);
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+.card-section h2{
+    font-family: "Merriweather", serif;
+    padding-top: 30px;
+    padding-bottom: 2px;
+    margin-bottom: 2px;
+}
+.card-section .card{
+    
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(138, 43, 226,0.2), 0 6px 20px 0 rgba(138, 43, 226, 0.19);
+}
+.card-section .card:hover{
+    transition: 2s;
+    transform: rotatey(360deg);
+}
+.card-section .card-body img{
+    width: 70px;
+    height: 70px;
+}
+
+/* service end */
+
+/* gallery start */
+.gallery_photo{
+    margin-bottom: 30px;
+}
+.gallery{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 10px;
+    
+}
+.gallery h2{
+    font-family: "Merriweather", serif;
+    padding-bottom: 2px;
+    margin-bottom: 2px;
+}
+.gallery img{
+    max-width:100%;
+    max-height:100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+.grid-wrapper > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-wrapper > div > img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.grid-wrapper{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+
+}
+.grid-wrapper .wide{
+    grid-column: span 2;
+}
+.grid-wrapper .tall{
+    grid-row: span 2;
+}
+.grid-wrapper .big{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.view_more_btn{
+    display: flex;
+    justify-content: center;
+}
+.view_more_btn button{
+    background-color: blueviolet;
+    margin-bottom: 15px;
+    padding: 3px 25px;
+    border-radius: 15px;
+}
+button[id="view"]:hover {
+    box-shadow: 0 4px 8px 0 rgba(138, 43, 226), 0 6px 20px 0 rgba(17, 17, 17, 0.1);
+}
+/* Gallery End */
+/* Video Gallery Start */
+.video{
+    background-color: rgb(233, 233, 233);
+    padding-bottom: 20px;
+}
+.video h2{
+    font-family: "Merriweather", serif;
+    padding-top: 30px;
+    padding-bottom: 2px;
+    margin-bottom: 2px;
+}
+.video p{
+    padding-bottom: 10px;
+}
+.video .card{
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 25px;  
+}
+.video img{
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(138, 43, 226,0.2), 0 6px 20px 0 rgba(138, 43, 226, 0.19);
+}
+.play-btn{
+    width:40px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    cursor:pointer;
+}
+/* Video Gallery End */
+/* contact us start */
+.contact-us{
+    
+    background-color: blueviolet;
+    padding-bottom: 20px;
+}
+.contact-us h2{
+    font-family: "Merriweather", serif;
+    color: white;
+    font-weight: bolder;
+    padding-top: 30px;
+    margin-bottom: 0;
+}
+.contact-us p{
+    font-family: "Merriweather", serif;
+    color: white;
+    opacity: 50%;
+    margin-bottom: 30px;
+}
+.contact-us input{
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 50px;
+}
+.contact-us textarea{
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+}
+::placeholder {
+    color: blueviolet;
+    font-family: "Merriweather", serif;
+    opacity: 1; /* Firefox */
+    font-size: smaller;
+  }
+.submit-btn{
+    font-family: "Merriweather", serif;
+    font-size:medium;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: white;
+    color: blueviolet;
+}
+.submit-btn:hover{
+    background-color: rgb(61, 0, 117);
+    color: white;
+}
+.map{
+    margin-top: 10px;
+    border-radius: 10px;
+}
+/* Contact Us end */
+
+
+
+
+/* book Now */
+.navbar{
+    background-color: rgb(132, 0, 255);
+}
+.navbar-brand{
+    width: 25%;
+    margin: 0% 5px;
+}
+.navbarSupportedContent{
+    justify-content: center;
+}
